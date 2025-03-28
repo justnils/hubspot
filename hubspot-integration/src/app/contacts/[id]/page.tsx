@@ -6,12 +6,6 @@ import { Suspense } from 'react'
 import DirectForm from './DirectForm'
 import ChatButton from './ChatButton'
 
-interface ContactDetailPageProps {
-  params: {
-    id: string
-  }
-}
-
 // Komponente für die Notizenliste
 async function NotesSection({ contactId }: { contactId: string }) {
   const notes = await getNotesByContactId(contactId)
@@ -33,7 +27,11 @@ async function NotesSection({ contactId }: { contactId: string }) {
   )
 }
 
-export default async function ContactDetailPage({ params }: ContactDetailPageProps) {
+type Props = {
+  params: { id: string }
+}
+
+export default async function ContactDetailPage({ params }: Props) {
   // WICHTIG: Extrahieren Sie die ID auf sichere Weise für Next.js
   const contactId = String(params?.id || '')
   

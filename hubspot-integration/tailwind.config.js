@@ -26,6 +26,8 @@ module.exports = {
           purple: '#8B5CF6',
           amber: '#F59E0B',
           pink: '#EC4899',
+          cyan: '#06B6D4',
+          indigo: '#4F46E5',
         },
       },
       borderRadius: {
@@ -35,6 +37,7 @@ module.exports = {
       boxShadow: {
         'soft': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02)',
         'highlight': '0 0 0 3px rgba(96, 165, 250, 0.3)',
+        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.1)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -44,4 +47,15 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    'text-primary',
+    'text-primary-light',
+    'text-primary-dark',
+    'bg-primary',
+    'bg-primary-light',
+    'bg-primary-dark',
+    'border-primary',
+    'hover:bg-primary-dark',
+    'hover:text-white',
+  ]
 } 
