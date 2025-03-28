@@ -9,19 +9,37 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#00395a',
-          light: '#00b4f0',
+          DEFAULT: '#2563EB',
+          light: '#60A5FA',
+          dark: '#1D4ED8',
         },
         secondary: {
-          dark: '#4a4a4a',
-          light: '#f2f2f2',
+          DEFAULT: '#10B981',
+          dark: '#065F46',
+          light: '#D1FAE5',
         },
-        white: '#ffffff',
+        background: {
+          light: '#F9FAFB',
+          dark: '#111827',
+        },
+        accent: {
+          purple: '#8B5CF6',
+          amber: '#F59E0B',
+          pink: '#EC4899',
+        },
+      },
+      borderRadius: {
+        'xl': '1rem',
+        '2xl': '1.5rem',
+      },
+      boxShadow: {
+        'soft': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02)',
+        'highlight': '0 0 0 3px rgba(96, 165, 250, 0.3)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'subtle-pattern': 'url("/subtle-pattern.png")',
       },
     },
   },

@@ -1,5 +1,26 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# HubSpot Integration
+
+Eine moderne Web-Anwendung zur Verwaltung von HubSpot-Kontakten und -Notizen mit KI-Unterstützung.
+
+## Funktionen
+
+- Kontaktliste anzeigen
+- Kontaktdetails einsehen
+- Gesprächsnotizen anzeigen
+- Gesprächsnotizen hinzufügen
+- Kontakte bearbeiten
+- Integration mit HubSpot API
+- Notizen an LLM schicken 
+- Fragen ermöglichen
+- Antworten auf Fragen im Chat bereitstellen
+
+## Kommende Features
+
+- API Keys besser absichern
+- LLM Lokal auf Llama umstellen
+
 ## Getting Started
 
 First, run the development server:
